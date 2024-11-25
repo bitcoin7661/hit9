@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#ffff">
+
+    <TextView
+        android:id="@+id/tvTitle2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="가슴"
+        android:textSize="50sp"
+        android:textColor="#ffff"
+        android:background="#3F51B5"
+        android:padding="20dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/btnbanchpress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="벤치프레스"
+        android:textSize="30sp"
+        android:background="#673AB7"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/tvTitle2" />
+
+    <Button
+        android:id="@+id/btndumbelpress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="덤벨프레스"
+        android:textSize="30sp"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:background="#673AB7"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/btnbanchpress" />
+
+    <Button
+        android:id="@+id/btnPushup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="푸쉬업"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:textSize="30sp"
+        android:background="#673AB7"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/btndumbelpress" />
+
+    <Button
+        android:id="@+id/btninclinepress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="인클라인 프레스"
+        android:layout_margin="10dp"
+        android:padding="20dp"
+        android:textSize="30sp"
+        android:background="#673AB7"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/btnPushup" />
+</RelativeLayout>
