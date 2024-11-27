@@ -6,7 +6,7 @@
     android:background="#ffffff">
 
     <TextView
-        android:id="@+id/tvTitle2"
+        android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="랫풀다운"
@@ -21,7 +21,7 @@
         android:id="@+id/tvTorque"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvTitle2"
+        android:layout_below="@id/tvTitle"
         android:layout_margin="15dp"
         android:background="#CDDC39"
         android:padding="16dp"
@@ -33,7 +33,7 @@
         android:id="@+id/etTargetTorque"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvTitle2"
+        android:layout_below="@id/tvTitle"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="5dp"
         android:layout_marginTop="25dp"

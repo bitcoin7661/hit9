@@ -10,11 +10,11 @@ import androidx.appcompat.app.AppCompatActivity
 
 class ChestDetailActivity : AppCompatActivity() {
 
-    private lateinit var tvTorque2: TextView
-    private lateinit var tvReps2: TextView
-    private lateinit var tvSpeed2: TextView
-    private lateinit var tvTitle2: TextView
-    private lateinit var etTargetTorque2: EditText
+    private lateinit var tvTorque: TextView
+    private lateinit var tvReps: TextView
+    private lateinit var tvSpeed: TextView
+    private lateinit var tvTitle: TextView
+    private lateinit var etTargetTorque: EditText
     private lateinit var etTargetReps: EditText
 
     @SuppressLint("MissingInflatedId")
@@ -23,16 +23,16 @@ class ChestDetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_chest_detail) // XML 레이아웃 파일 설정
 
         // UI 요소 초기화
-        tvTorque2 = findViewById(R.id.tvTorque2)
-        tvReps2 = findViewById(R.id.tvReps2)
-        tvSpeed2 = findViewById(R.id.tvSpeed2)
-        tvTitle2 = findViewById(R.id.tvTitle2) // 타이틀 텍스트뷰 초기화
-        etTargetTorque2 = findViewById(R.id.etTargetTorque2)
+        tvTorque = findViewById(R.id.tvTorque)
+        tvReps = findViewById(R.id.tvReps)
+        tvSpeed = findViewById(R.id.tvSpeed)
+        tvTitle = findViewById(R.id.tvTitle) // 타이틀 텍스트뷰 초기화
+        etTargetTorque = findViewById(R.id.etTargetTorque)
         etTargetReps = findViewById(R.id.etTargetReps)
 
         // Intent로부터 운동 기구 이름 가져오기
         val equipmentName = intent.getStringExtra("EQUIPMENT_NAME")
-        tvTitle2.text = equipmentName // 타이틀 업데이트
+        tvTitle.text = equipmentName // 타이틀 업데이트
 
         // 저장 기능 버튼 클릭 리스너
         findViewById<Button>(R.id.btnSave).setOnClickListener {
@@ -42,7 +42,7 @@ class ChestDetailActivity : AppCompatActivity() {
 
     private fun saveSettings() {
         // 사용자 설정 저장 로직 구현
-        val targetTorque = etTargetTorque2.text.toString()
+        val targetTorque = etTargetTorque.text.toString()
         val targetReps = etTargetReps.text.toString()
 
         // 기본적인 사용자 피드백 제공

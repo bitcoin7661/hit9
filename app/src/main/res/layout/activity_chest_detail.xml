@@ -6,7 +6,7 @@
     android:background="#ffffff">
 
     <TextView
-        android:id="@+id/tvTitle2"
+        android:id="@+id/tvTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="벤치프레스"
@@ -18,10 +18,10 @@
         android:gravity="center" />
 
     <TextView
-        android:id="@+id/tvTorque2"
+        android:id="@+id/tvTorque"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvTitle2"
+        android:layout_below="@id/tvTitle"
         android:layout_margin="15dp"
         android:background="#CDDC39"
         android:padding="16dp"
@@ -30,15 +30,15 @@
 
 
     <EditText
-        android:id="@+id/etTargetTorque2"
+        android:id="@+id/etTargetTorque"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvTitle2"
+        android:layout_below="@id/tvTitle"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="5dp"
         android:layout_marginTop="25dp"
         android:layout_marginEnd="0dp"
-        android:layout_toEndOf="@id/tvTorque2"
+        android:layout_toEndOf="@id/tvTorque"
         android:background="#4CAF50"
         android:hint="목표가동범위:입력 "
         android:inputType="numberDecimal"
@@ -49,7 +49,7 @@
         android:id="@+id/tvReps2"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/tvTorque2"
+        android:layout_below="@id/tvTorque"
         android:layout_margin="15dp"
         android:background="#CDDC39"
         android:padding="16dp"
@@ -58,13 +58,13 @@
 
 
     <EditText
-        android:id="@+id/etTargetReps"
+        android:id="@+id/etTargetReps2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/etTargetTorque2"
+        android:layout_below="@id/etTargetTorque"
         android:layout_marginStart="5dp"
         android:layout_marginTop="25dp"
-        android:layout_toEndOf="@id/tvTorque2"
+        android:layout_toEndOf="@id/tvTorque"
         android:background="#FF9800"
         android:hint="목표횟수:입력"
         android:inputType="numberDecimal"
